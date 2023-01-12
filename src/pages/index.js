@@ -1,10 +1,18 @@
 import * as React from "react";
 
+import Layout from "../components/layout/Layout";
+
+import LanguageProvider from "../providers/LanguageProvider";
+
 const IndexPage = () => {
   return (
-    <main>
-      <h2 className="text-xl"> Hello World </h2>
-    </main>
+    <LanguageProvider>
+      <Layout>
+        <main>
+          <h2 className="text-xl"> Hello World </h2>
+        </main>
+      </Layout>
+    </LanguageProvider>
   );
 };
 
