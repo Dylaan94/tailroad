@@ -7,7 +7,7 @@ export default function Layout({ children }) {
   return (
     <div className="w-full bg-primary-grey flex flex-col items-center ">
       <Navbar />
-      <div className=" max-w-screen-lg">{children}</div>
+      <div className=" max-w-screen-xl">{children}</div>
       <Footer />
     </div>
   );

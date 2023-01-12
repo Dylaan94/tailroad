@@ -1,16 +1,17 @@
 import * as React from "react";
 
+// components
 import Layout from "../components/layout/Layout";
+import MainHero from "../components/pages/home/MainHero";
 
+// providers
 import LanguageProvider from "../providers/LanguageProvider";
 
 const IndexPage = () => {
   return (
     <LanguageProvider>
       <Layout>
-        <main>
-          <h2 className="text-xl"> Hello World </h2>
-        </main>
+        <MainHero />
       </Layout>
     </LanguageProvider>
   );
