@@ -7,25 +7,29 @@ const content = {};
 
 export default function ServicesSection() {
   return (
-    <div className="services-section bg-digbeth bg-cover h-[100vh] bg-center w-screen flex justify-center flex-row ">
-      <div className="services-container flex flex-row w-4/5 max-w-screen-xl pt-36 pb-56">
-        <div className="left-col w-2/5">
-          <h2 className="text-7xl">services</h2>
-          <p className="text-text-grey font-medium text-lg">
-            here at tailroad we provide a range of services to help your
-            business grow. from simple product pages to multi-language mobile
-            apps, we have the skills and expertise to support you every step of
-            the way
-          </p>
+    <div className="services-section bg-white md:bg-bg-grey lg:bg-digbeth bg-cover lg:h-[100vh] md:max-h-[800px] bg-center w-screen flex justify-center flex-row ">
+      <div className="services-container flex flex-col md:justify-between md:flex-row w-11/12 max-w-screen-xl md:py-20 py-20">
+        {/* left column */}
+        <div className="left-col w-full md:w-1/3 lg:w-2/5">
+          <h2 className="text-6xl lg:text-8xl">services</h2>
+          <div className="separator border-[3px] border-primary-green w-20"></div>
+          <div className="text-container py-14 w-full md:w-full xl:w-2/3 text-text-grey font-medium text-md ">
+            <p className="">
+              here at tailroad we provide a range of services to help your
+              business grow. from simple product pages to multi-language mobile
+              apps, we have the skills and expertise to support you every step
+              of the way
+            </p>
 
-          <p className="text-text-grey font-medium text-lg mt-4">
-            <a className="font-bold text-black text-xl"> contact us </a> today
-            to learn more about how we can help your business succeed
-          </p>
+            <p className=" mt-4">
+              <a className="font-bold text-black text-xl"> contact us </a> today
+              to learn more about how we can help your business succeed
+            </p>
+          </div>
         </div>
-
-        <div className="right-col w-3/5">
-          <div className="grid grid-cols-2 grid-rows-2">
+        {/* right column */}
+        <div className="right-col w-full md:w-3/5">
+          <div className=" flex flex-col md:grid md:grid-cols-2 md:grid-rows-2">
             <SellingPoint
               header="web design"
               description="we are here to bring your vision to life. we offer customisable packages to fit your specific needs and budget. with our user-friendly platforms and intuitive design, we'll have you up and running in no time"
