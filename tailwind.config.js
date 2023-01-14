@@ -10,6 +10,10 @@ module.exports = {
         "primary-grey": "#262424",
         "secondary-grey": "#B3B3B3",
         "primary-green": "#5BC5B7",
+        "text-grey": "#686666",
+      },
+      backgroundImage: {
+        digbeth: "url('~/src/images/digbeth.jpg')",
       },
     },
   },
