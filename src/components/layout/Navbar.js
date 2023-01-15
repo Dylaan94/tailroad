@@ -22,7 +22,9 @@ export default function Navbar() {
     <nav className="navbar w-screen flex justify-center h-32 bg-primary-grey">
       <div className="container max-w-screen-xl w-11/12 sm:w-4/5 flex items-center justify-between ">
         <div className="logo">
-          <img src={logo} alt="logo" />
+          <Link to="/">
+            <img src={logo} alt="logo" />
+          </Link>
         </div>
 
         <div className="links text-white">
