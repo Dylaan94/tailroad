@@ -1,0 +1,7 @@
+.code-editor-content {
+    pre {
+        .javascript, .python, .html {
+            @apply bg-editor-primary-light-grey;
+        }
+    }
+}

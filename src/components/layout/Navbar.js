@@ -19,7 +19,7 @@ export default function Navbar() {
   const { language, toggleLanguage } = useContext(languageContext);
 
   return (
-    <nav className="navbar w-screen flex justify-center h-32 bg-primary-grey">
+    <nav className="navbar w-screen flex justify-center h-32 bg-primary-black">
       <div className="container max-w-screen-xl w-11/12 sm:w-4/5 flex items-center justify-between ">
         <div className="logo">
           <Link to="/">

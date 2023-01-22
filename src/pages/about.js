@@ -19,6 +19,7 @@ const About = () => {
           <div className="about-columns text-white sm:flex-row flex-col flex items-center sm:items-start w-full sm:justify-between py-12">
             <div className="left-col w-11/12 sm:w-[45%]">
               <p>
+                
                 Tailroad is a web design and development agency with roots in
                 translation services. Our journey began in Japan, where we honed
                 our skills in language and cultural translation. As we grew and

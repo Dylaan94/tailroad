@@ -3,6 +3,7 @@ import * as React from "react";
 // components
 import Layout from "../components/layout/Layout";
 import MainHero from "../components/pages/home/MainHero";
+import OurServices from "../components/pages/home/OurServices";
 import ServicesSection from "../components/pages/home/ServicesSection";
 
 // providers
@@ -12,7 +13,8 @@ const IndexPage = () => {
   return (
     <Layout>
       <MainHero />
-      <ServicesSection />
+      {/* <ServicesSection /> */}
+      <OurServices />
     </Layout>
   );
 };

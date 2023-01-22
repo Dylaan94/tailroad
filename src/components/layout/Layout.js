@@ -11,7 +11,7 @@ export default function Layout({ children }) {
     <LanguageProvider>
       {/* {console.log(children)}
       {console.log(children.map((child) => console.log(child)))} */}
-      <div className="w-full bg-primary-grey flex flex-col items-center ">
+      <div className="w-full bg-primary-black flex flex-col items-center ">
         <Navbar />
         {children}
         <Footer />
