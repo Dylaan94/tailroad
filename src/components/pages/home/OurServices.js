@@ -1,6 +1,10 @@
 import React from "react";
 import CodeEditor from "../../CodeEditor";
 
+// images
+
+import programmer from "../../../images/programmer.png";
+
 const content = [
   {
     heading: "web-development.js",
@@ -67,15 +71,19 @@ const content = [
     heading: "localisation.py",
     content: `class Localisation:
 
-    def translate():
-        return print("""
+    def translate(self):
+        print("""
 
         do you need your site to be multilingual?
         we have a wide network of professional translators
         to ensure accurate and effective translation
         for a global audience.
-        
+
         """)
+
+
+L = Localisation()
+L.translate()
 `,
     lang: "python",
   },
@@ -83,8 +91,15 @@ const content = [
 
 export default function OurServices() {
   return (
-    <div className="our-services h-screen">
-      <div className="services-editor h-[60vh] w-[50vw]">
+    <div className="our-services flex h-[80vh] w-11/12 justify-around">
+      <div className="img-div flex-end flex h-2/3 w-1/6">
+        <img
+          src={programmer}
+          className="programmer-img h-60 w-60 min-w-[15rem]"
+        />
+      </div>
+
+      <div className="services-editor h-[600px] w-[900px]">
         <CodeEditor title="tailroad.features" content={content} />
       </div>
     </div>
