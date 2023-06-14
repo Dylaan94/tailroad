@@ -5,11 +5,11 @@ const ButtonType = {
   secondary: "bg-primary-grey text-white",
 };
 
-export default function CustomButton({ text, clicked, type = "primary" }) {
+export default function CustomButton({ text, handleClick, type = "primary" }) {
   return (
     <button
-      onClick={clicked}
-      className={"px-6 py-3 mr-8 rounded-sm" + " " + ButtonType[type]}
+      onClick={handleClick}
+      className={"mr-8 rounded-sm px-6 py-3" + " " + ButtonType[type]}
     >
       {text}
     </button>

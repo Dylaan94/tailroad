@@ -12,7 +12,11 @@ const About = () => {
   return (
     <Layout>
       <div className="container flex flex-col">
-        <img src={onomichiBridge}></img>
+        <img
+          className="fade-in h-auto w-full"
+          lazy={true}
+          src={onomichiBridge}
+        ></img>
         <div className="about-text mt-10 w-full">
           <div className="about-header flex w-full flex-col items-center justify-between lg:flex-row">
             <div className="flex text-white">
@@ -20,6 +24,7 @@ const About = () => {
                 className="about-dylan h-24 object-fill sm:h-32"
                 src={dylan}
                 alt="dylan"
+                lazy="true"
               />
               <span className="ml-8 flex flex-col justify-center">
                 <h2 className="text-3xl">dylan brain</h2>
