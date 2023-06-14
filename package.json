@@ -12,7 +12,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
     "@fontsource/josefin-sans": "^4.5.11",
@@ -33,6 +34,7 @@
     "@types/react-highlight": "^0.12.5",
     "autoprefixer": "^10.4.13",
     "gatsby-plugin-postcss": "^6.4.0",
+    "gh-pages": "^5.0.0",
     "postcss": "^8.4.21",
     "postcss-import": "^15.1.0",
     "prettier": "^2.8.3",

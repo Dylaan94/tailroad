@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useEffect } from "react";
 
 // components
 import Layout from "../components/layout/Layout";
@@ -22,6 +23,10 @@ const content = [
 ];
 
 const IndexPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <Layout>
       <MainHero />

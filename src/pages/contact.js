@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import Layout from "../components/layout/Layout";
 
@@ -7,6 +7,12 @@ import temple from "../images/temple.jpg";
 import WorkedWith from "../components/WorkedWith";
 
 export default function Contact() {
+  useEffect(() => {
+    console.log("scrolling to top");
+      window.scrollTo(0, 0);
+
+  }, []);
+
   return (
     <Layout>
       <div className="contact-us flex  w-full justify-center py-16">

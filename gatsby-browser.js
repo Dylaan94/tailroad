@@ -11,3 +11,10 @@ import "@fontsource/josefin-sans/600.css";
 // import "highlight.js/styles/github-dark-dimmed.css";
 
 import "highlight.js/styles/atom-one-dark.css";
+
+export function shouldUpdateScroll(prevRouterProps, { location }) {
+  window.scrollTo(0, 0);
+  const body = document.getElementsByTagName("body")[0];
+  body.scrollTop = 0;
+  return false;
+}

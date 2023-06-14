@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { Link } from "gatsby";
 
 import Layout from "../components/layout/Layout";
 
@@ -9,6 +10,10 @@ import onomichiBridge from "../images/onomichi-bridge.png";
 import dylan from "../images/dylan.png";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <Layout>
       <div className="container flex flex-col">
@@ -80,9 +85,12 @@ const About = () => {
                 bring your vision to life.
               </p>
               <p>
-                <span className="text-4xl font-bold text-primary-green">
-                  contact us{" "}
-                </span>
+                <Link
+                  to={"/contact"}
+                  className="text-4xl font-bold text-primary-green hover:cursor-pointer hover:underline"
+                >
+                  contact us
+                </Link>{" "}
                 today to learn more about how we can support your growth and
                 success.
               </p>

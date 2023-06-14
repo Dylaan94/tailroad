@@ -36,13 +36,13 @@ export default function Navbar() {
               </Link>
             );
           })}
-          <button
+          {/* <button
             className="ml-10"
             role="language toggle"
             onClick={() => toggleLanguage()}
           >
             {language === "en" ? "日本語" : "EN"}
-          </button>
+          </button> */}
         </div>
       </div>
     </nav>
