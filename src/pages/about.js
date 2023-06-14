@@ -6,20 +6,37 @@ import Layout from "../components/layout/Layout";
 
 import logoLarge from "../images/logo-large.svg";
 import onomichiBridge from "../images/onomichi-bridge.png";
+import dylan from "../images/dylan.png";
 
 const About = () => {
   return (
     <Layout>
       <div className="container flex flex-col">
         <img src={onomichiBridge}></img>
-        <div className="about-text mt-10">
-          <h1 className=" text-6xl sm:text-7xl  text-right text-primary-green font-bold w-11/12 sm:w-full">
-            the story of tailroad
-          </h1>
-          <div className="about-columns text-white sm:flex-row flex-col flex items-center sm:items-start w-full sm:justify-between py-12">
+        <div className="about-text mt-10 w-full">
+          <div className="about-header flex w-full flex-col items-center justify-between lg:flex-row">
+            <div className="flex text-white">
+              <img
+                className="about-dylan h-24 object-fill sm:h-32"
+                src={dylan}
+                alt="dylan"
+              />
+              <span className="ml-8 flex flex-col justify-center">
+                <h2 className="text-3xl">dylan brain</h2>
+                <p className="text-xl font-bold text-primary-green">founder</p>
+                <p className="hover:cursor-pointer hover:text-primary-green hover:underline">
+                  <a href="mailto:dylan@tailroad.com">dylan@tailroad.com</a>
+                </p>
+              </span>
+            </div>
+
+            <h1 className=" mt-4 text-3xl font-bold text-primary-green sm:text-5xl md:mt-0 md:text-7xl">
+              the story of tailroad
+            </h1>
+          </div>
+          <div className="about-columns flex w-full flex-col items-center py-12 text-white sm:flex-row sm:items-start sm:justify-between">
             <div className="left-col w-11/12 sm:w-[45%]">
               <p>
-                
                 Tailroad is a web design and development agency with roots in
                 translation services. Our journey began in Japan, where we honed
                 our skills in language and cultural translation. As we grew and

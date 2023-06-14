@@ -10,7 +10,8 @@ import logo from "../../images/logo.svg";
 // organised as a three-tuple with en, ja, and slug
 
 const content = [
-  ["services", "サービス", "services"],
+  // ["services", "サービス", "services"],
+  ["home", "ホーム", ""],
   ["about", "私たちについて", "about"],
   ["contact", "お問い合わせ", "contact"],
 ];
@@ -19,8 +20,8 @@ export default function Navbar() {
   const { language, toggleLanguage } = useContext(languageContext);
 
   return (
-    <nav className="navbar w-screen flex justify-center h-32 bg-primary-black">
-      <div className="container max-w-screen-xl w-11/12 sm:w-4/5 flex items-center justify-between ">
+    <nav className="navbar flex h-[15vh] w-screen justify-center bg-primary-black">
+      <div className="container flex w-11/12 max-w-screen-xl items-center justify-between sm:w-4/5 ">
         <div className="logo">
           <Link to="/">
             <img src={logo} alt="logo" />

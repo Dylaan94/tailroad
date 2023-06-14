@@ -6,6 +6,7 @@ import MainHero from "../components/pages/home/MainHero";
 import OurServices from "../components/pages/home/OurServices";
 import ServicesSection from "../components/pages/home/ServicesSection";
 import Banner from "../components/Banner";
+import WorkedWith from "../components/WorkedWith";
 
 // providers
 import LanguageProvider from "../providers/LanguageProvider";
@@ -15,7 +16,7 @@ const content = [
   ["navigate the road to business growth", ""],
   ["unleash your company's full potential with tailroad", ""],
   [
-    "we empower businesses on their journey to success. Discover our expert services in our interactive IDE below. Click on the tabs to explore how we cna help your business thrive",
+    "we empower businesses on their journey to success. Discover our expert services in our interactive IDE below. Click on the tabs to explore how we can help your business thrive",
     "",
   ],
 ];
@@ -31,6 +32,7 @@ const IndexPage = () => {
         colour={"primary-green"}
       />
       <OurServices />
+      <WorkedWith />
     </Layout>
   );
 };

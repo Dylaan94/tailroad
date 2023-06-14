@@ -18,15 +18,20 @@ export default function CodeEditor({ title, content }) {
     );
   };
 
+  useEffect(() => {
+    setActiveContent(content[0].content);
+    setActiveLang(content[0].lang);
+  }, [content]);
+
   return (
     <div className="code-editor h-full w-full overflow-hidden rounded-3xl bg-editor-primary-light-grey">
       <div className="code-editor-banner flex h-10 w-full items-center justify-center rounded-t-3xl border-b-2 border-editor-secondary-dark-grey bg-editor-primary-dark-grey">
         <h2 className="code-editor-title text-white">{title} </h2>
       </div>
       <div className="code-editor-body flex h-full w-full ">
-        <div className="code-editor-sidebar h-full w-12 border-r-2 border-editor-secondary-dark-grey"></div>
+        <div className="code-editor-sidebar hidden h-full w-12 border-r-2 border-editor-secondary-dark-grey lg:block"></div>
         <div className="code-editor-main-section h-full w-full">
-          <div className="code-editor-tabs h-10 w-full   bg-editor-primary-dark-grey">
+          <div className="code-editor-tabs grid w-full grid-cols-2 bg-editor-primary-dark-grey sm:flex  sm:h-10">
             {content.map((item, i) => {
               let active;
               item.heading === activeTab ? (active = true) : (active = false);
