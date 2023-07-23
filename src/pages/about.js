@@ -12,14 +12,42 @@ import dylan from "../images/dylan.png";
 const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
+
+    const aboutImage = document.querySelector(".about-image");
+    // aboutImage animation
+    aboutImage.classList.add("animate__animated", "animate__fadeIn");
+    aboutImage.style.animationDelay = "0.2s";
+    // aboutDylan animation
+    const aboutDylan = document.querySelector(".about-dylan");
+    aboutDylan.classList.add("animate__animated", "animate__fadeIn");
+    aboutDylan.style.animationDelay = "0.4s";
+    // aboutDylanHeader animation
+    const aboutDylanHeader = document.querySelector(".about-dylan-header");
+    aboutDylanHeader.classList.add("animate__animated", "animate__fadeInDown");
+    aboutDylanHeader.style.animationDelay = "0.6s";
+    // about dylan tex animation
+    const aboutDylanText = document.querySelectorAll(".about-dylan-text");
+    let index = 1;
+    aboutDylanText.forEach((item) => {
+      item.classList.add("animate__animated", "animate__fadeInUp");
+      item.style.animationDelay = `${index}s`;
+      index += 0.3;
+    });
+    // about header text animation
+    const aboutHeaderText = document.querySelector(".about-header-text");
+    aboutHeaderText.classList.add("animate__animated", "animate__fadeInRight");
+    aboutHeaderText.style.animationDelay = "0.8s";
+    // about columns animation
+    const aboutColumns = document.querySelector(".about-columns");
+    aboutColumns.classList.add("animate__animated", "animate__fadeIn");
+    aboutColumns.style.animationDelay = "1s";
   }, []);
 
   return (
     <Layout>
-      <div className="container flex flex-col">
+      <div className="about container flex flex-col">
         <img
-          className="fade-in h-auto w-full"
-          lazy={true}
+          className="about-image h-[400px] w-full"
           src={onomichiBridge}
         ></img>
         <div className="about-text mt-10 w-full">
@@ -32,15 +60,17 @@ const About = () => {
                 lazy="true"
               />
               <span className="ml-8 flex flex-col justify-center">
-                <h2 className="text-3xl">dylan brain</h2>
-                <p className="text-xl font-bold text-primary-green">founder</p>
-                <p className="hover:cursor-pointer hover:text-primary-green hover:underline">
+                <h2 className="about-dylan-header text-3xl">dylan brain</h2>
+                <p className="about-dylan-text text-xl font-bold text-primary-green">
+                  founder
+                </p>
+                <p className="about-dylan-text hover:cursor-pointer hover:text-primary-green hover:underline">
                   <a href="mailto:dylan@tailroad.com">dylan@tailroad.com</a>
                 </p>
               </span>
             </div>
 
-            <h1 className=" mt-4 text-3xl font-bold text-primary-green sm:text-5xl md:mt-0 md:text-7xl">
+            <h1 className="about-header-text mt-4 text-3xl font-bold text-primary-green sm:text-5xl md:mt-0 md:text-7xl">
               the story of tailroad
             </h1>
           </div>
