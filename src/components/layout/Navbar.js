@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Link } from "gatsby";
 
 // provider imports
@@ -19,9 +19,19 @@ const content = [
 export default function Navbar() {
   const { language, toggleLanguage } = useContext(languageContext);
 
+  useEffect(() => {
+    setAnimations();
+  }, []);
+
+  const setAnimations = () => {
+    const navbarContainer = document.querySelector(".navbar-container");
+    navbarContainer.classList.add("animate__animated", "animate__fadeIn");
+    navbarContainer.style.animationDelay = "1s";
+  };
+
   return (
     <nav className="navbar flex h-[15vh] w-screen justify-center bg-primary-black">
-      <div className="container flex w-11/12 max-w-screen-xl items-center justify-between sm:w-4/5 ">
+      <div className="navbar-container flex w-11/12 max-w-screen-xl items-center justify-between sm:w-4/5 ">
         <div className="logo">
           <Link to="/">
             <img src={logo} alt="logo" />

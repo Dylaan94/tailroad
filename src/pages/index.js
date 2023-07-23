@@ -1,6 +1,9 @@
 import * as React from "react";
 import { useEffect } from "react";
 
+// library imports
+import "animate.css";
+
 // components
 import Layout from "../components/layout/Layout";
 import MainHero from "../components/pages/home/MainHero";
