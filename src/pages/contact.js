@@ -9,8 +9,15 @@ import WorkedWith from "../components/WorkedWith";
 export default function Contact() {
   useEffect(() => {
     console.log("scrolling to top");
-      window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
 
+    const contactUsImage = document.querySelector(".contact-us-image");
+    contactUsImage.classList.add("animate__animated", "animate__fadeInLeft");
+    contactUsImage.style.animationDelay = "0.5s";
+
+    const contactUsFormDiv = document.querySelector(".contact-us-form-div");
+    contactUsFormDiv.classList.add("animate__animated", "animate__fadeInRight");
+    contactUsFormDiv.style.animationDelay = "0.5s";
   }, []);
 
   return (
@@ -18,9 +25,12 @@ export default function Contact() {
       <div className="contact-us flex  w-full justify-center py-16">
         <div className="container flex max-h-[550px] w-4/5 flex-col md:flex-row ">
           <div className="left hidden w-2/5 pr-16 md:block">
-            <img className="h-full w-full object-cover" src={temple} />
+            <img
+              className="contact-us-image h-full w-full object-cover"
+              src={temple}
+            />
           </div>
-          <div className="right flex w-full flex-col border-l-2 border-t-2 border-primary-green bg-primary-grey p-12 text-white md:w-3/5">
+          <div className="contact-us-form-div right flex w-full flex-col border-l-2 border-t-2 border-primary-green bg-primary-grey p-12 text-white md:w-3/5">
             <h1 className="pb-8 text-4xl text-white">contact us</h1>
             <div className="contact-us-form flex">
               <div className="contact-us-form-left flex w-full flex-col sm:w-2/3">
