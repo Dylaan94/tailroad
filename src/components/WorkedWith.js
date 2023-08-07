@@ -8,6 +8,7 @@ import honyaku from "../images/honyaku.png";
 import asoviva from "../images/asoviva.png";
 import manabu from "../images/manabu.png";
 import queenco from "../images/queenco.png";
+import crest from "../images/crest.jpg";
 
 export default function WorkedWith() {
   const { language, toggleLanguage } = useContext(languageContext);
@@ -81,11 +82,16 @@ export default function WorkedWith() {
           />
           <img
             className="company-image h-24 py-4 lg:py-0"
+            src={crest}
+            alt="crest"
+          />
+          <img
+            className="company-image h-24 py-4 lg:py-0"
             src={asoviva}
             alt="asoviva"
           />
           <img
-            className="company-image h-24 py-4 lg:py-0"
+            className="company-image  h-24 py-4 lg:py-0"
             src={manabu}
             alt="manabu"
           />
