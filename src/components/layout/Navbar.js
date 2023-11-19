@@ -30,15 +30,15 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="navbar flex h-[15vh] w-screen justify-center bg-primary-black">
-      <div className="navbar-container flex w-11/12 max-w-screen-xl items-center justify-between sm:w-4/5 ">
+    <nav className="navbar flex h-24 w-screen justify-center bg-white">
+      <div className="navbar-container flex w-11/12 items-center justify-between  ">
         <div className="logo">
           <Link to="/">
             <img src={logo} alt="logo" />
           </Link>
         </div>
 
-        <div className="links text-white">
+        <div className="links text-black">
           {content.map((item) => {
             return (
               <Link key={item} className="ml-10" to={`/${item[2]}`}>

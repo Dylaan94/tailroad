@@ -10,6 +10,8 @@ module.exports = {
         "primary-grey": "#262424",
         "secondary-grey": "#B3B3B3",
         "primary-green": "#5BC5B7",
+        "primary-blue": "#68D0FD",
+        "secondary-blue": "#25BDFF",
         "text-grey": "#686666",
         "background-grey": "#f6f6f6",
         "primary-black": "#090909",
@@ -17,9 +19,6 @@ module.exports = {
         "editor-primary-dark-grey": "#1D2124",
         "editor-secondary-dark-grey": "#1A1D20",
         "editor-primary-light-grey": "#212529",
-      },
-      backgroundImage: {
-        digbeth: "url('~/src/images/digbeth.jpg')",
       },
     },
   },
