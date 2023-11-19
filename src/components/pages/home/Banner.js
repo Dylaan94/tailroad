@@ -32,7 +32,7 @@ export default function Banner({ header, subheader, content, colour }) {
   }, []);
 
   return (
-    <div className="banner flex w-full items-center justify-center py-10 opacity-0">
+    <div className="banner flex w-full items-center justify-center bg-primary-grey py-10 opacity-0">
       {console.log(colour)}
       <div className=" w-11/12 text-center text-white md:w-2/3 lg:w-1/2">
         {/* checks if colour has been given and sets text colour */}

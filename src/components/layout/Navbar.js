@@ -31,7 +31,7 @@ export default function Navbar() {
 
   return (
     <nav className="navbar flex h-24 w-screen justify-center bg-white">
-      <div className="navbar-container flex w-11/12 items-center justify-between  ">
+      <div className="navbar-container flex w-11/12 items-center justify-between border-b   ">
         <div className="logo">
           <Link to="/">
             <img src={logo} alt="logo" />

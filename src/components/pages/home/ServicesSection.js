@@ -1,19 +1,19 @@
 import React from "react";
 
 //components
-import SellingPoint from "../../SellingPoint";
+import SellingPoint from "../../shared/SellingPoint";
 
 const content = {};
 
 export default function ServicesSection() {
   return (
-    <div className="services-section bg-white md:bg-bg-grey lg:bg-digbeth bg-cover lg:h-[100vh] md:max-h-[800px] bg-center w-screen flex justify-center flex-row ">
-      <div className="services-container flex flex-col md:justify-between md:flex-row w-11/12 max-w-screen-xl md:py-20 py-20">
+    <div className="services-section md:bg-bg-grey lg:bg-digbeth flex w-screen flex-row justify-center bg-primary-grey bg-cover bg-center md:max-h-[800px] lg:h-[100vh] ">
+      <div className="services-container flex w-11/12 max-w-screen-xl flex-col py-20 md:flex-row md:justify-between md:py-20">
         {/* left column */}
         <div className="left-col w-full md:w-1/3 lg:w-2/5">
           <h2 className="text-6xl lg:text-8xl">services</h2>
-          <div className="separator border-[3px] border-primary-green w-20"></div>
-          <div className="text-container py-14 w-full md:w-full xl:w-2/3 text-text-grey font-medium text-md ">
+          <div className="separator w-20 border-[3px] border-primary-green"></div>
+          <div className="text-container text-md w-full py-14 font-medium text-text-grey md:w-full xl:w-2/3 ">
             <p className="">
               here at tailroad we provide a range of services to help your
               business grow. from simple product pages to multi-language mobile
@@ -22,7 +22,7 @@ export default function ServicesSection() {
             </p>
 
             <p className=" mt-4">
-              <a className="font-bold text-black text-xl"> contact us </a> today
+              <a className="text-xl font-bold text-black"> contact us </a> today
               to learn more about how we can help your business succeed
             </p>
           </div>

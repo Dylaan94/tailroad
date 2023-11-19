@@ -9,11 +9,12 @@ import Layout from "../components/layout/Layout";
 import MainHero from "../components/pages/home/MainHero";
 import OurServices from "../components/pages/home/OurServices";
 import ServicesSection from "../components/pages/home/ServicesSection";
-import Banner from "../components/Banner";
-import WorkedWith from "../components/WorkedWith";
+import Banner from "../components/pages/home/Banner";
+import WorkedWith from "../components/pages/home/WorkedWith";
 
 // providers
 import LanguageProvider from "../providers/LanguageProvider";
+import RecentProjects from "../components/pages/home/RecentProjects";
 
 // content for the banner in tuples for en and jp. header, subheader, content
 const content = [
@@ -33,14 +34,17 @@ const IndexPage = () => {
   return (
     <Layout>
       <MainHero />
+      <RecentProjects />
+
+      <WorkedWith />
       <Banner
         header={content[0][0]}
         subheader={content[1][0]}
         content={content[2][0]}
         colour={"primary-green"}
       />
+
       <OurServices />
-      <WorkedWith />
     </Layout>
   );
 };

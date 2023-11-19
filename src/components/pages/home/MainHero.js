@@ -12,15 +12,16 @@ export default function MainHero() {
 
   return (
     <>
-      <div className="mainHero relative z-20  h-[calc(100vh-96px)] w-full ">
-        <div className="flex h-full w-1/2 items-center justify-between">
-          <img className="mb-[20%] h-2/5" src={redEllipse} />
-          <div className="mainHero-container flex w-2/3 flex-col ">
-            <h1 className="text-9xl font-bold text-primary-grey">tailroad</h1>
-            <p className="text-2xl font-[300] text-text-grey">
+      <div className="mainHero relative flex h-[calc(100vh-96px)] w-full justify-center bg-white lg:justify-start ">
+        <div className="flex h-full w-4/5 items-center justify-center lg:w-[60%] ">
+          <div className="mainHero-container flex w-4/5 flex-col pb-16 lg:w-2/3">
+            <h1 className="text-7xl font-bold text-primary-grey lg:text-9xl">
+              tailroad
+            </h1>
+            <p className="text-xl font-[300] text-text-grey lg:text-2xl">
               We pride ourselves on crafting unique online experiences.
             </p>
-            <p className="text-2xl font-[300] text-text-grey">
+            <p className="text-xl font-[300] text-text-grey lg:text-2xl">
               Experts in web design, development, app development and
               localisation
             </p>
@@ -36,8 +37,15 @@ export default function MainHero() {
         </div>
       </div>
 
+      {/* Sun image */}
       <img
-        className="absolute bottom-0 right-0 h-[85%]"
+        className=" absolute left-0 top-[40%] mb-[30%] h-[10%] opacity-40 lg:opacity-90 xl:h-[20%] "
+        src={redEllipse}
+      />
+
+      {/* Logo */}
+      <img
+        className="absolute bottom-0 right-0 h-1/4 opacity-40 md:h-1/2 lg:opacity-90 xl:h-[85%]"
         src={logoLarge}
         alt="logo"
       />

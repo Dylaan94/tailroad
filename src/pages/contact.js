@@ -4,7 +4,7 @@ import Layout from "../components/layout/Layout";
 
 //image imports
 import temple from "../images/temple.jpg";
-import WorkedWith from "../components/WorkedWith";
+import WorkedWith from "../components/pages/home/WorkedWith";
 
 export default function Contact() {
   useEffect(() => {
