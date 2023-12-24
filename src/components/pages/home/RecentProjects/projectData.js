@@ -1,15 +1,15 @@
 // tech stack logos
-import nextjs from "../images/techStackLogos/nextjs.png";
-import react from "../images/techStackLogos/react.png";
-import phrase from "../images/techStackLogos/phrase.png";
-import bcrypt from "../images/techStackLogos/bcrypt.jpg";
-import gatsby from "../images/techStackLogos/gatsby.png";
-import figma from "../images/techStackLogos/figma.png";
+import nextjs from "../../../../images/techStackLogos/nextjs.png";
+import react from "../../../../images/techStackLogos/react.png";
+import phrase from "../../../../images/techStackLogos/phrase.png";
+import bcrypt from "../../../../images/techStackLogos/bcrypt.jpg";
+import gatsby from "../../../../images/techStackLogos/gatsby.png";
+import figma from "../../../../images/techStackLogos/figma.png";
 
 // images
-import crestEnvironmental from "../images/recentWork/crestEnvironmental.png";
-import manabu from "../images/recentWork/manabu.png";
-import honyakuMemories from "../images/recentWork/honyakuMemories.png";
+import crestEnvironmental from "../../../../images/recentWork/crestEnvironmental.png";
+import manabu from "../../../../images/recentWork/manabu.png";
+import honyakuMemories from "../../../../images/recentWork/honyakuMemories.png";
 
 export const featuredProject = {
   image: honyakuMemories,

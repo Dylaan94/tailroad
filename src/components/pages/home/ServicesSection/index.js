@@ -1,7 +1,7 @@
 import React from "react";
 
 //components
-import SellingPoint from "../../shared/SellingPoint";
+import SellingPoint from "../../../shared/SellingPoint";
 
 const content = {};
 

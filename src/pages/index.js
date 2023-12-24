@@ -17,6 +17,7 @@ import LanguageProvider from "../providers/LanguageProvider";
 import RecentProjects from "../components/pages/home/RecentProjects";
 
 // content for the banner in tuples for en and jp. header, subheader, content
+
 const content = [
   ["navigate the road to business growth", ""],
   ["unleash your company's full potential with tailroad", ""],
@@ -35,14 +36,8 @@ const IndexPage = () => {
     <Layout>
       <MainHero />
       <RecentProjects />
-
       <WorkedWith />
-      <Banner
-        header={content[0][0]}
-        subheader={content[1][0]}
-        content={content[2][0]}
-        colour={"primary-green"}
-      />
+      <Banner colour={"primary-green"} />
 
       <OurServices />
     </Layout>

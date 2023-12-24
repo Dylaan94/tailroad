@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from "react";
-import CodeEditor from "../../shared/CodeEditor";
+import CodeEditor from "../../../shared/CodeEditor";
 
-import {
-  content,
-  contentSmall,
-  contentMobile,
-} from "../../../editorText/content";
+import { content, contentSmall, contentMobile } from "./editorText/content";
 
 export default function OurServices() {
   // initialise content to contentSmall
@@ -51,7 +47,7 @@ export default function OurServices() {
   }, []);
 
   return (
-    <div className="our-services flex h-full w-11/12 items-center justify-around sm:h-[80vh] ">
+    <div className="our-services flex h-full w-11/12 justify-around sm:h-[80vh] ">
       <div className="services-editor opacity-0 sm:h-[500px] sm:w-[700px] md:h-[580px] md:w-[850px]">
         <CodeEditor title="tailroad.features" content={content} />
       </div>
