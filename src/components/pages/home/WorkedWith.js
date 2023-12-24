@@ -3,12 +3,13 @@ import React, { useContext, useEffect } from "react";
 // context imports
 import { languageContext } from "../../../providers/LanguageProvider";
 
-// impage imports
+// image imports
 import honyaku from "../../../images/honyaku.png";
 import asoviva from "../../../images/asoviva.png";
 import manabu from "../../../images/manabu.png";
 import queenco from "../../../images/queenco.png";
 import crest from "../../../images/crest.jpg";
+import hachinohe from "../../../images/hachinohe.svg";
 
 export default function WorkedWith() {
   const { language, toggleLanguage } = useContext(languageContext);
@@ -65,6 +66,15 @@ export default function WorkedWith() {
     ["building success together", "一緒に成功を築く"],
   ];
 
+  const companies = [
+    { image: honyaku, alt: "honyaku" },
+    { image: crest, alt: "crest" },
+    { image: asoviva, alt: "asoviva" },
+    { image: hachinohe, alt: "hachinohe" },
+    { image: manabu, alt: "manabu" },
+    { image: queenco, alt: "queenco" },
+  ];
+
   return (
     <div className="worked-with  flex w-full justify-center bg-white py-28 ">
       <div className="container flex flex-col">
@@ -74,32 +84,16 @@ export default function WorkedWith() {
         <h3 className="worked-with-sub-heading text-center text-lg text-primary-green">
           {language === "en" ? content[1][0] : content[1][1]}
         </h3>
-        <div className="company-images flex flex-col flex-wrap items-center justify-between py-12 md:flex-row">
-          <img
-            className="company-image h-24 py-4 lg:py-0"
-            src={honyaku}
-            alt="honyaku"
-          />
-          <img
-            className="company-image h-24 py-4 lg:py-0"
-            src={crest}
-            alt="crest"
-          />
-          <img
-            className="company-image h-24 py-4 lg:py-0"
-            src={asoviva}
-            alt="asoviva"
-          />
-          <img
-            className="company-image  h-24 py-4 lg:py-0"
-            src={manabu}
-            alt="manabu"
-          />
-          <img
-            className="company-image h-24 py-4 lg:py-0"
-            src={queenco}
-            alt="queenco"
-          />
+        <div className="company-images flex flex-wrap items-center justify-around  py-12">
+          {companies.map((company) => {
+            return (
+              <img
+                className="company-image h-16 py-4 px-2 lg:py-0"
+                src={company.image}
+                alt={company.alt}
+              />
+            );
+          })}
         </div>
       </div>
     </div>
