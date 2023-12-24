@@ -1,41 +1,10 @@
 import * as React from "react";
 
-// images
-
-import crestEnvironmental from "../../../images/recentWork/crestEnvironmental.png";
-import manabu from "../../../images/recentWork/manabu.png";
-import honyakuMemories from "../../../images/recentWork/honyakuMemories.png";
-
 // logos
 import LogoLarge from "../../../images/logoLarge.png";
 
-// tech stack logos
-import nextjs from "../../../images/techStackLogos/nextjs.png";
-import react from "../../../images/techStackLogos/react.png";
-import phrase from "../../../images/techStackLogos/phrase.png";
-import bcrypt from "../../../images/techStackLogos/bcrypt.jpg";
-import gatsby from "../../../images/techStackLogos/gatsby.png";
-import figma from "../../../images/techStackLogos/figma.png";
-
-// create array out of images
-const projects = [
-  {
-    image: manabu,
-    name: "Manabu",
-    description:
-      "Product site for Manabu, a Fukuoka based startup focused on ESG, Learning, and Sustainability.",
-    techStack: [gatsby, react],
-  },
-  {
-    image: crestEnvironmental,
-    name: "Crest Environmental",
-    description:
-      "Holding page and ebrochure for Crest Environmental, UK based ecological migration specialists. Full site build in progress. ",
-    techStack: [gatsby, react, figma],
-  },
-];
-
-const featuredTechStack = [nextjs, react, phrase, bcrypt, figma];
+// Projects data
+import { featuredProject, projects } from "../../../data/projectData";
 
 export default function RecentProjects() {
   return (
@@ -46,30 +15,27 @@ export default function RecentProjects() {
           <h2 className="text-4xl text-white">Some recent projects</h2>
 
           {/* Showcase Project */}
-          <div className="showcase-project flex py-12">
+          <div className="showcase-project flex flex-col py-12 xl:flex-row">
             <img
-              className="w-2/3 rounded-lg border-4 border-primary-green"
-              src={honyakuMemories}
-              alt="honyaku memories"
+              className=" w-full rounded-lg border-4 border-primary-green xl:w-2/3"
+              src={featuredProject.image}
+              alt={featuredProject.name}
             />
-            <div className="showcase-project-overlay flex flex-col justify-center bg-primary-grey  py-6 pl-8">
+            <div className="showcase-project-overlay flex flex-col justify-center   py-6 xl:pl-8">
               <h3 className="pb-2 text-2xl text-primary-green">
-                Honyaku Cloud - Honyaku Memories
+                {featuredProject.name}
               </h3>
               <p className="text-md text-secondary-grey">
-                Custom interface for Honyaku Cloud's Honyaku Memories service
-                enabling users to to effortlessly view, review and flag
-                translations within the translation memory.
+                {featuredProject.description_1}
               </p>
               <p className="text-md text-secondary-grey">
-                Includes custom sign-in functionality with authentication and
-                encryption to ensure top-tier security.
+                {featuredProject.description_2}
               </p>
               <h3 className="pt-6 pb-2 text-lg text-primary-green">
                 Tech stack
               </h3>
               <div className="project-tech-stack flex flex-wrap">
-                {featuredTechStack.map((logo) => {
+                {featuredProject.techStack.map((logo) => {
                   return (
                     <img
                       className="m-2 h-16"
@@ -84,7 +50,7 @@ export default function RecentProjects() {
 
           {/* Projects div */}
 
-          <div className="projects grid grid-cols-2 gap-16 py-12">
+          <div className="projects grid grid-cols-1 gap-16 py-12 lg:grid-cols-2">
             {/* Project */}
             {projects.map((project) => {
               return (
@@ -125,7 +91,7 @@ export default function RecentProjects() {
         <img
           src={LogoLarge}
           alt="logo"
-          className="absolute bottom-0 right-0  h-1/2  opacity-20 "
+          className="absolute bottom-0 right-0 h-1/5  opacity-20  lg:h-1/2 "
         />
       </section>
     </>
