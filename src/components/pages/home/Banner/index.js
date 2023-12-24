@@ -11,7 +11,7 @@ export default function Banner({ colour }) {
     subheader: "unleash your company's full potential with tailroad",
     content:
       "we empower businesses on their journey to success. Discover our expert services in our interactive IDE below. Click on the tabs to explore how we can help your business thrive",
-    link: "/services",
+    link: "/contact",
   };
 
   return (
@@ -34,12 +34,12 @@ export default function Banner({ colour }) {
 
         {content?.link && (
           <p className="bannerLink pt-2">
-            or check out our{" "}
+            or{" "}
             <Link className="text-xl text-primary-green" to={content.link}>
               {" "}
-              services{" "}
+              contact us{" "}
             </Link>{" "}
-            page
+            for free a quote
           </p>
         )}
       </div>

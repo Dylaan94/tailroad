@@ -56,7 +56,7 @@ export default function Footer() {
 
   const content = [
     [
-      "a web design based in the midlands",
+      "all your web design needs in one place",
       "ミッドランドに拠点を置くウェブデザイン会社",
     ],
     ["links", "リンク"],

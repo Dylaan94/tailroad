@@ -29,8 +29,16 @@ export default function Navbar() {
     navbarContainer.style.animationDelay = "1s";
   };
 
+  const isHomePage = () => {
+    return window.location.pathname === "/";
+  };
+
   return (
-    <nav className="navbar flex h-24 w-screen justify-center bg-white">
+    <nav
+      className={`navbar flex h-24 w-screen justify-center ${
+        isHomePage() ? "bg-white " : "bg-primary-grey"
+      }`}
+    >
       <div className="navbar-container flex w-11/12 items-center justify-between  ">
         <div className="logo">
           <Link to="/">
@@ -38,7 +46,7 @@ export default function Navbar() {
           </Link>
         </div>
 
-        <div className="links text-black">
+        <div className={`links ${isHomePage() ? "text-black" : "text-white"}`}>
           {content.map((item) => {
             return (
               <Link key={item} className="ml-10" to={`/${item[2]}`}>
