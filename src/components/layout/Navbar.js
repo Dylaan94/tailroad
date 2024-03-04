@@ -30,11 +30,8 @@ export default function Navbar() {
   };
 
   const isHomePage = () => {
-    if (window) {
-      return window.location.pathname === "/";
-    } else {
-      return false;
-    }
+    if (typeof window === "undefined") return false;
+    return window.location.pathname === "/";
   };
 
   return (
