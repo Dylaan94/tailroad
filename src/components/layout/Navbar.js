@@ -1,5 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import { Link } from "gatsby";
+import { useLocation } from "@reach/router";
 
 // provider imports
 import { languageContext } from "../../providers/LanguageProvider";
@@ -29,9 +30,10 @@ export default function Navbar() {
     navbarContainer.style.animationDelay = "1s";
   };
 
+  const location = useLocation();
+
   const isHomePage = () => {
-    if (typeof window === "undefined") return false;
-    return window.location.pathname === "/";
+    return location.pathname === "/";
   };
 
   return (
