@@ -18,10 +18,9 @@
   "dependencies": {
     "@fontsource/josefin-sans": "^4.5.11",
     "animate.css": "^4.1.1",
-    "gatsby": "^5.13.1",
+    "gatsby": "^5.4.0",
     "gatsby-plugin-image": "^3.4.0",
     "gatsby-plugin-sass": "^6.4.0",
-    "gatsby-plugin-scroll-reveal": "^0.0.7",
     "gatsby-plugin-sharp": "^5.4.0",
     "gatsby-plugin-sitemap": "^6.4.0",
     "gatsby-source-filesystem": "^5.4.0",

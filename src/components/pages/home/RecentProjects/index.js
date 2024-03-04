@@ -37,7 +37,7 @@ export default function RecentProjects() {
               <p className="showcase-project-description text-md text-secondary-grey">
                 {featuredProject.description_2}
               </p>
-              <h3 className="showcase-project-techstack pt-6 pb-2 text-lg text-primary-green">
+              <h3 className="showcase-project-techstack pb-2 pt-6 text-lg text-primary-green">
                 Tech stack
               </h3>
               <div className="showcase-project-tech-stack flex flex-wrap">
@@ -62,7 +62,7 @@ export default function RecentProjects() {
               return (
                 <div className="project flex flex-col">
                   <img
-                    className="h-full w-full rounded-lg border-4 border-primary-green "
+                    className=" h-full w-full rounded-lg border-4 border-primary-green object-cover object-center "
                     src={project.image}
                     alt="project"
                   />
@@ -73,7 +73,7 @@ export default function RecentProjects() {
                     <p className="text-lg text-secondary-grey">
                       {project.description}
                     </p>
-                    <h3 className="pt-6 pb-2 text-lg text-primary-green">
+                    <h3 className="pb-2 pt-6 text-lg text-primary-green">
                       Tech stack
                     </h3>
                     <div className="project-tech-stack flex flex-wrap">

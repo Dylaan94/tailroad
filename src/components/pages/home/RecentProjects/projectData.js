@@ -5,15 +5,20 @@ import phrase from "../../../../images/techStackLogos/phrase.png";
 import bcrypt from "../../../../images/techStackLogos/bcrypt.jpg";
 import gatsby from "../../../../images/techStackLogos/gatsby.png";
 import figma from "../../../../images/techStackLogos/figma.png";
+import wordpress from "../../../../images/techStackLogos/wordpress.png";
+import php from "../../../../images/techStackLogos/php.png";
+import laravel from "../../../../images/techStackLogos/laravel.png";
+import wpml from "../../../../images/techStackLogos/wpml.png";
 
 // images
 import crestEnvironmental from "../../../../images/recentWork/crestEnvironmental.png";
 import manabu from "../../../../images/recentWork/manabu.png";
 import honyakuMemories from "../../../../images/recentWork/honyakuMemories.png";
+import hachinohe from "../../../../images/recentWork/hachinohe.png";
 
 export const featuredProject = {
   image: honyakuMemories,
-  name: "Honaku Cloud - Honyaku Memories",
+  name: "Honyaku Cloud - Honyaku Memories",
   description_1:
     "Custom interface for Honyaku Cloud's Honyaku Memories service enabling users to to effortlessly view, review and flag translations within the translation memory.",
   description_2:
@@ -23,17 +28,17 @@ export const featuredProject = {
 
 export const projects = [
   {
+    image: hachinohe,
+    name: "Visit Hachinohe",
+    description:
+      "Landing page for Visit Hachinohe Nanbu Senbei Event. Built in English, Japanese, and Chinese",
+    techStack: [laravel, php, wordpress, wpml],
+  },
+  {
     image: manabu,
     name: "Manabu",
     description:
       "Product site for Manabu, a Fukuoka based startup focused on ESG, Learning, and Sustainability.",
     techStack: [gatsby, react],
-  },
-  {
-    image: crestEnvironmental,
-    name: "Crest Environmental",
-    description:
-      "Holding page and ebrochure for Crest Environmental, UK based ecological migration specialists. Full site build in progress. ",
-    techStack: [gatsby, react, figma],
   },
 ];
